@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -21,17 +22,23 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2");
 
-        {int number = 1;
-        while (number <= 10) {
+        {
+            int number = 1;
+            while (number <= 10) {
+                System.out.print(number + " ");
+                number++;
+            }
+        }
+        {
+            System.out.println(" ");
+        }
+        for (int number = 10; number >= 1; ) {
             System.out.print(number + " ");
-            number++;}
-    }
-        {System.out.println(" ");}
-        for (int number = 10; number >= 1;) {
-            System.out.print( number + " ");
             number--;
         }
-        {System.out.println(" ");}
+        {
+            System.out.println(" ");
+        }
     }
     public static void task3() {
         System.out.println("Задача 3");
@@ -61,7 +68,20 @@ public class Main {
             countInBank += (countInBank / 100) * 7;
             countMonth++;
             if (countMonth % 6 == 0) {
-            System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + countInBank + " рублей.");
-        }}
+                System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + countInBank + " рублей.");
+            }
+        }
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        int firstMonth = 1;
+        int countInBank = 15000;
+        while (firstMonth <= (12 * 9)) {
+            firstMonth++;
+            countInBank += (countInBank / 100) * 7;
+            if (firstMonth % 6 == 0) {
+                System.out.println("Месяц " + firstMonth + ", сумма накоплений равна " + countInBank + " рублей.");
+            }
+        }
     }
 }
