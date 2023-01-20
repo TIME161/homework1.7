@@ -3,8 +3,9 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
+        task5();
     }
-
     public static void task1() {
         System.out.println("Задача 1");
 
@@ -17,7 +18,6 @@ public class Main {
             System.out.println("Месяц " + firstMonth++ + ", сумма накоплений равна " + countInBank + " рублей.");
         }
     }
-
     public static void task2() {
         System.out.println("Задача 2");
 
@@ -43,5 +43,25 @@ public class Main {
             startCount = startCount + bornCount - dieCount;
             System.out.println("Год " + firstYear++ + ", численность населения составляет " + startCount);
         }
+    }
+    public static void task4() {
+        System.out.println("Задача 4");
+        int firstMonth = 1;
+        int countInBank = 15000;
+        while (countInBank < 12_000_000) {
+            countInBank += (countInBank / 100) * 7;
+            System.out.println("Месяц " + firstMonth++ + ", сумма накоплений равна " + countInBank + " рублей.");
+        }
+    }
+    public static void task5() {
+        System.out.println("Задача 5");
+        int countMonth = 0;
+        int countInBank = 15000;
+        while (countInBank < 12_000_000) {
+            countInBank += (countInBank / 100) * 7;
+            countMonth++;
+            if (countMonth % 6 == 0) {
+            System.out.println("Месяц " + countMonth + ", сумма накоплений равна " + countInBank + " рублей.");
+        }}
     }
 }
