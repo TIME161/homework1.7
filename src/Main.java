@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -82,6 +83,15 @@ public class Main {
             if (firstMonth % 6 == 0) {
                 System.out.println("Месяц " + firstMonth + ", сумма накоплений равна " + countInBank + " рублей.");
             }
+        }
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        int firstFriday = 4;
+        while (firstFriday <= 31) {
+            if (firstFriday <= 31) {
+                System.out.println("Сегодня пятница, " + firstFriday + "-е число. Необходимо подготовить отчет");}
+            firstFriday +=7;
         }
     }
 }
