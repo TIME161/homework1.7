@@ -7,7 +7,9 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
     }
+
     public static void task1() {
         System.out.println("Задача 1");
 
@@ -20,6 +22,7 @@ public class Main {
             System.out.println("Месяц " + firstMonth++ + ", сумма накоплений равна " + countInBank + " рублей.");
         }
     }
+
     public static void task2() {
         System.out.println("Задача 2");
 
@@ -41,6 +44,7 @@ public class Main {
             System.out.println(" ");
         }
     }
+
     public static void task3() {
         System.out.println("Задача 3");
         int startCount = 12_000_000;
@@ -52,6 +56,7 @@ public class Main {
             System.out.println("Год " + firstYear++ + ", численность населения составляет " + startCount);
         }
     }
+
     public static void task4() {
         System.out.println("Задача 4");
         int firstMonth = 1;
@@ -61,6 +66,7 @@ public class Main {
             System.out.println("Месяц " + firstMonth++ + ", сумма накоплений равна " + countInBank + " рублей.");
         }
     }
+
     public static void task5() {
         System.out.println("Задача 5");
         int countMonth = 0;
@@ -73,6 +79,7 @@ public class Main {
             }
         }
     }
+
     public static void task6() {
         System.out.println("Задача 6");
         int firstMonth = 1;
@@ -87,11 +94,24 @@ public class Main {
     }
     public static void task7() {
         System.out.println("Задача 7");
-        int firstFriday = 4;
+        int firstFriday = 1;
         while (firstFriday <= 31) {
             if (firstFriday <= 31) {
-                System.out.println("Сегодня пятница, " + firstFriday + "-е число. Необходимо подготовить отчет");}
-            firstFriday +=7;
+                System.out.println("Сегодня пятница, " + firstFriday + "-е число. Необходимо подготовить отчет");
+            }
+            firstFriday += 7;
+        }
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        int start = 0;
+        int pastTime = 1823;
+        int futureTime = 2123;
+        while  (start <= futureTime) {
+            start += 79;
+            if (start >= pastTime && start <= futureTime) {
+                System.out.println(start);
+            }
         }
     }
 }
