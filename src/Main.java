@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -29,6 +30,18 @@ public class Main {
         for (int number = 10; number >= 1;) {
             System.out.print( number + " ");
             number--;
+        }
+        {System.out.println(" ");}
+    }
+    public static void task3() {
+        System.out.println("Задача 3");
+        int startCount = 12_000_000;
+        int firstYear = 1;
+        while (firstYear <= 10) {
+            int bornCount = (startCount / 1000) * 17;
+            int dieCount = (startCount / 1000) * 8;
+            startCount = startCount + bornCount - dieCount;
+            System.out.println("Год " + firstYear++ + ", численность населения составляет " + startCount);
         }
     }
 }
